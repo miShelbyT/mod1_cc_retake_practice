@@ -27,36 +27,36 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 
 
 #### Recipe
-- `Recipe#initialize(name, description)`
+<!-- - `Recipe#initialize(name, description)`
   - A recipe should be initialized with a `name` (string) and a `description` (string).
   - The name **cannot** be changed after the recipe is initialized.
   - The description can be changed after the recipe is initialized.
   - Both name and description are readable
 - `Recipe.all`
-  - Returns an array of all recipe instances that have been created.
+  - Returns an array of all recipe instances that have been created. -->
 
-#### Restaurant
+<!-- #### Restaurant
 - `Restaurant#initialize(owner, name, star_rating)`
   - A restaurant should be initialized with a `RestaurantOwner` instance, a `name` (string) and a `star_rating` (integer).
   - The name and star_rating can be changed after the restaurant is initialized.
   - Both name and star_rating are readable.
 - `Restaurant.all`
-  - Returns an array of all restaurant instances that have been created.
+  - Returns an array of all restaurant instances that have been created. -->
 
-#### RestaurantOwner
+<!-- #### RestaurantOwner
 - `RestaurantOwner#initialize(name, age)`
   - A restaurant_owner should be initialized with a `name` (string) and an `age` (integer).
   - The name and age can be changed after the restaurant_owner is initialized.
   - Both name and age are readable.
 - `RestaurantOwner.all`
-  - Returns an array of all restaurant_owner instances that have been created.
+  - Returns an array of all restaurant_owner instances that have been created. -->
 
-#### MenuItem
+<!-- #### MenuItem
 - `MenuItem#initialize(restaurant, recipe, price)`
   - A menu_item should be initialized with a `Restaurant` instance, a `Recipe` instance and a `price` (float).
   - The price can be changed after the menu_item is initialized.
 - `MenuItem.all`
-  - Returns an array of all menu_item instances that have been created.
+  - Returns an array of all menu_item instances that have been created. -->
 
 
 
