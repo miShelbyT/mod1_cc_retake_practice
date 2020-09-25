@@ -3,14 +3,16 @@ class Recipe
     attr_accessor :description
     attr_reader :name
 
-    @@recipe = []
+    @@all = []
 
     def initialize(name, description)
         @name = name
         @description = description
-        @@recipe << self
+        @@all << self
     end
 
-    
+    def self.all
+        @@all
+    end
 
 end
