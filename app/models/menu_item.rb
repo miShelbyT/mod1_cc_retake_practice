@@ -1,11 +1,11 @@
 class MenuItem
 
-    attr_accessor :price
+    attr_accessor :price, :restaurant, :recipe
 
     def initialize(restaurant, recipe, price)
         @price = price.to_f
-        @restaurant = Restaurant
-        @recipe = Recipe
+        @restaurant = restaurant
+        @recipe = recipe
     end
 
     def self.all
