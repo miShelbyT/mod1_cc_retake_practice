@@ -12,6 +12,10 @@ class MenuItem
         @@all << self
     end
 
+    def owner
+        self.restaurant.owner
+    end
+
     def self.all
         @@all
     end

@@ -10,6 +10,14 @@ class RestaurantOwner
         @@all << self
     end
 
+    def restaurants
+        Restaurant.all.filter { |rest| rest.owner == self }
+    end
+
+    def menu_items
+        self.restaurants.map { |rest| rest.menu_items }
+    end
+
     def self.all
         @@all
     end

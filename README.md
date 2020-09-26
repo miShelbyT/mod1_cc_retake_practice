@@ -71,22 +71,22 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 #### Restaurant
 <!-- - `Restaurant#menu_items`
   - returns an array of all the `MenuItem` instances for the `Restaurant`. -->
-- `Restaurant#owner`
-  - returns the `RestaurantOwner` instance associated with the `Restaurant` instance
+<!-- - `Restaurant#owner`
+  - returns the `RestaurantOwner` instance associated with the `Restaurant` instance -->
 <!-- - `Restaurant#recipes`
   - returns an array of all the `Recipe` instances that are on this `Restaurant`s menu. -->
 
 #### RestaurantOwner
-- `RestaurantOwner#restaurants`
+<!-- - `RestaurantOwner#restaurants`
   - returns an array of `Restaurant` instances associated with the `RestaurantOwner` instance.
 - `RestaurantOwner#menu_items`
-  - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances.
+  - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances. -->
 
 #### MenuItem
-- `MenuItem#recipe`
-  - returns the `Recipe` instance associated with the `MenuItem` instance
-- `MenuItem#restaurant`
-  - returns the `Restaurant` instance associated with the `MenuItem` instance
+<!-- - `MenuItem#recipe`
+  - returns the `Recipe` instance associated with the `MenuItem` instance -->
+<!-- - `MenuItem#restaurant`
+  - returns the `Restaurant` instance associated with the `MenuItem` instance -->
 - `MenuItem#owner`
   - returns the `Owner` instance associated with the `MenuItem` instance
 

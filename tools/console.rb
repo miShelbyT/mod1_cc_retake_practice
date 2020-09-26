@@ -7,7 +7,6 @@ def reload
 end
 
 
-
 diana = RestaurantOwner.new("Diana", 37)
 jackie = RestaurantOwner.new("Jackie", 40)
 mike = RestaurantOwner.new("Mike", 55)
@@ -33,9 +32,27 @@ pizza = MenuItem.new(bella_via, veggie_pizza, 9.75)
 smoothie = MenuItem.new(little_chef, berry_smoothie, 6.25)
 empanada = MenuItem.new(henrys_cafe, cheese_empanada, 3.00)
 
+"Diana is #{diana.name}"
+"Mike is #{mike.age}"
+RestaurantOwner.all
 
+"#{little_chef.owner} is Diana"
+"#{bella_via.name} is Bella Via"
+"#{henrys_cafe.star_rating} should be 4"
+Restaurant.all
 
+Recipe.all
 
+MenuItem.all
+
+mike.restaurants
+diana.restaurants
+
+mike.menu_items
+diana.menu_items
+
+pizza.recipe
+pizza.restaurant
 
 
 
