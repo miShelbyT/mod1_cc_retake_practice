@@ -32,7 +32,7 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
   - The name **cannot** be changed after the recipe is initialized.
   - The description can be changed after the recipe is initialized.
   - Both name and description are readable
-- `Recipe.all`
+<!-- - `Recipe.all`
   - Returns an array of all recipe instances that have been created. -->
 
 <!-- #### Restaurant
@@ -56,25 +56,25 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
   - A menu_item should be initialized with a `Restaurant` instance, a `Recipe` instance and a `price` (float).
   - The price can be changed after the menu_item is initialized.
 - `MenuItem.all`
-  - Returns an array of all menu_item instances that have been created. -->
+  - Returns an array of all menu_item instances that have been created. --> -->
 
 
 
 ### Object Relationship Methods
 
 #### Recipe
-- `Recipe#menu_items`
+<!-- - `Recipe#menu_items`
   - returns an array of all the `MenuItem` instances for the `Recipe`.
 - `Recipe#restaurants`
-  - returns an array of all the `Restaurant` instances that have the `Recipe` on their menu.
+  - returns an array of all the `Restaurant` instances that have the `Recipe` on their menu. -->
 
 #### Restaurant
-- `Restaurant#menu_items`
-  - returns an array of all the `MenuItem` instances for the `Restaurant`.
+<!-- - `Restaurant#menu_items`
+  - returns an array of all the `MenuItem` instances for the `Restaurant`. -->
 - `Restaurant#owner`
   - returns the `RestaurantOwner` instance associated with the `Restaurant` instance
-- `Restaurant#recipes`
-  - returns an array of all the `Recipe` instances that are on this `Restaurant`s menu.
+<!-- - `Restaurant#recipes`
+  - returns an array of all the `Recipe` instances that are on this `Restaurant`s menu. -->
 
 #### RestaurantOwner
 - `RestaurantOwner#restaurants`

@@ -1,6 +1,7 @@
 class MenuItem
 
-    attr_accessor :price, :restaurant, :recipe
+    attr_accessor :price
+    attr_reader :restaurant, :recipe
 
     @@all = []
 

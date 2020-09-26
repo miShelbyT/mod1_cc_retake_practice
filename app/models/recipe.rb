@@ -11,6 +11,14 @@ class Recipe
         @@all << self
     end
 
+    def menu_items
+        MenuItem.all.filter { |item| item.recipe == self }
+    end
+
+    def restaurants
+        self.menu_items.map { |item| item.restaurant }
+    end
+
     def self.all
         @@all
     end
