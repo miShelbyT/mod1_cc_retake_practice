@@ -1,7 +1,6 @@
 class Restaurant
 
-    attr_accessor :name, :star_rating
-    attr_reader :owner
+    attr_accessor :name, :star_rating, :owner
 
     @@all = []
 
@@ -19,6 +18,14 @@ class Restaurant
     def recipes
         self.menu_items.map { |item| item.recipe }
     end
+
+    def has_dish?(recipe)
+        self.recipes.include?(recipe)
+    end
+
+    # def self.highest_rated
+    #     self.star_rating.max
+    # end
         
     def self.all
         @@all

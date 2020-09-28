@@ -18,6 +18,20 @@ class RestaurantOwner
         self.restaurants.map { |rest| rest.menu_items }
     end
 
+    def self.average_age
+        self.all.reduce(0) { |total, owner| total + owner.age }/self.count
+    end
+
+    def sell_restaurant(restaurant, buyer)
+        self.restaurants.each do |rest|
+            if rest == restaurant
+                rest.owner = buyer
+            end
+        end
+    end
+
+    
+
     def self.all
         @@all
     end

@@ -16,6 +16,10 @@ class MenuItem
         self.restaurant.owner
     end
 
+    def self.most_expensive_item
+        self.price.max
+    end
+
     def self.all
         @@all
     end
