@@ -17,7 +17,7 @@ class MenuItem
     end
 
     def self.most_expensive_item
-        self.price.max
+        self.all.max { |a, b| a.price <=> b.price }
     end
 
     def self.all

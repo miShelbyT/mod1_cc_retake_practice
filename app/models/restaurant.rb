@@ -23,9 +23,13 @@ class Restaurant
         self.recipes.include?(recipe)
     end
 
-    # def self.highest_rated
-    #     self.star_rating.max
-    # end
+    def self.highest_rated
+        self.all.max { |a, b| a.star_rating <=> b.star_rating }
+		end
+		
+		def self.highest_rated
+			self.all.max_by { |restaurant| restaurant.star_rating }
+		end
         
     def self.all
         @@all
