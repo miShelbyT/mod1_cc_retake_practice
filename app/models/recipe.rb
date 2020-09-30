@@ -20,12 +20,11 @@ class Recipe
     end
 
     def average_price
-        self.menu_items.reduce(0) { |total, item| total + item.price }.to_i / menu_items.count
+        self.menu_items.reduce(0) { |sum, item| sum + item.price }.to_i / menu_items.count
     end
 
     def highest_price
-        mi = self.menu_items.max_by { |item| item.price }
-        mi.price
+        self.menu_items.max_by { |item| item.price }.price
     end
 
     def cheapest_restaurant
@@ -33,15 +32,6 @@ class Recipe
 				mi.restaurant
 		end
 		
-		# def cheapest_restaurant
-		# 	lowest = self.lowest_price
-		# 	lowest_menu_item = self.menu_items.find { |menu_item| menu_item.price == lowest }
-		# 	lowest_menu_item.restaurant
-		# end
-
-    # def self.inactive
-    #     self.all.select  { |mi| mi.restaurant == nil }
-		# end
 		
     def self.inactive
 		 inactive = []

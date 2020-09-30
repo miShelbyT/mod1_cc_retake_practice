@@ -25,10 +25,10 @@ cheesy_burger = Recipe.new("Cheeseburger", "entree")
 
 
 # salad = MenuItem.new(ca_pizza_kitchen, cpk_salad, 6.50)
-pizza = MenuItem.new(ca_pizza_kitchen, pizza, 9.75)
+pizza1 = MenuItem.new(ca_pizza_kitchen, pizza, 9.75)
 burger = MenuItem.new(ca_pizza_kitchen, cheesy_burger, 9.75)
-pizza = MenuItem.new(bella_via, pizza, 15.00)
-pizza = MenuItem.new(bella_via, pizza, 10.00)
+pizza2 = MenuItem.new(bella_via, pizza, 15.00)
+pizza3 = MenuItem.new(bella_via, pizza, 10.00)
 smoothie = MenuItem.new(little_chef, berry_smoothie, 6.25)
 empanada = MenuItem.new(henrys_cafe, cheese_empanada, 3.00)
 

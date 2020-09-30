@@ -15,7 +15,7 @@ class RestaurantOwner
     end
 
     def menu_items
-        self.restaurants.map { |rest| rest.menu_items }
+        self.restaurants.map { |rest| rest.menu_items }.flatten
     end
 
     def self.average_age
@@ -23,11 +23,13 @@ class RestaurantOwner
         age / all.size
     end
 
-    def sell_restaurant(restaurant, buyer)
+		def sell_restaurant(restaurant, buyer)
+			if restaurant.owner == self
         self.restaurants.each do |rest|
-            if rest == restaurant
+						if rest == restaurant
                 rest.owner = buyer
-            end
+						end
+					end
         end
     end
 
